@@ -1,0 +1,258 @@
+@font-face {
+    font-family: 'Montserrat-Regular';
+    src: url("font/Montserrat-Regular.woff");
+}
+
+@font-face {
+    font-family: 'Montserrat-Bold';
+    src: url("font/Montserrat-Bold.woff");
+    font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat-Bold', sans-serif;
+}
+
+p {
+    font-family: 'Montserrat-Regular', sans-serif;
+}
+
+body {
+    color: white;
+    background-image: linear-gradient(to bottom right, #FF00FE, #0064FF);
+    margin: 0px;
+}
+
+button {
+    cursor: pointer;
+}
+
+b {
+    font-family: 'Montserrat-Bold';
+}
+
+a {
+    font-family: 'Montserrat-Bold';
+    color: white;
+}
+
+input {
+    background-color: white;
+    border-style: none;
+    border-radius: 100px;
+    font-family: 'Montserrat-Bold';
+    height: 25px;
+    font-size: 15px;
+    width: 96%;
+}
+
+textarea {
+    background-color: white;
+    border-style: none;
+    border-radius: 15px;
+    font-family: 'Montserrat-Regular';
+    height: 120px;
+    font-size: 15px;
+    width: 96%;
+}
+
+.top-bar {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    gap: 1rem;
+}
+
+#home-button {
+    margin: 5px;
+    background-image: linear-gradient(to bottom right, #FF00FE, #0064FF);
+    border-style: none;
+    border-radius: 10px;
+    font-family: 'Montserrat-Bold';
+    color: white;
+    height: 30px;
+    width: 110px;
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+.top-button {
+    background-color: white;
+    font-family: 'Montserrat-Regular';
+    border-style: none;
+    min-width: 3px;
+}
+
+.over-top-button {
+    background-color: white;
+    font-family: 'Montserrat-Regular';
+    border-style: none;
+    min-width: 3px;
+}
+
+#more-button {
+    display: none;
+}
+
+.under-bar-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.more-bar {
+    background-color: white;
+    display: none;
+}
+
+.button-more-bar {
+    width: 100%;
+    background-color: white;
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: black;
+    height: 45px;
+    text-align: start;
+    font-family: 'Montserrat-Regular';
+}
+
+#back-old-days-button {
+    margin: 5px;
+    background-image: linear-gradient(to bottom right, #00BDFF, #0064FF);
+    border-style: none;
+    border-radius: 10px;
+    font-family: 'Montserrat-Bold';
+    color: white;
+    height: 30px;
+    width: 110px;
+    font-size: 20px;
+    margin-right: 0px;
+}
+
+.tombol-ikuti-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#tombol-ikuti {
+    background-color: white;
+    color: black;
+    width: 250px;
+    height: 40px;
+    border-style: none;
+    border-radius: 100px;
+    font-size: 25px;
+    font-family: 'Montserrat-Bold';
+}
+
+.title-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.layanan-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 8px;
+    flex-wrap: wrap;
+}
+
+.testimoni-container {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    margin: 8px;
+    flex-wrap: wrap;
+}
+
+.garansi-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card {
+    border-style: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.card-button-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
+.card-button {
+    width: 250px;
+    height: 30px;
+    background-color: white;
+    color: black;
+    border-style: none;
+    border-radius: 100px;
+    font-family: 'Montserrat-Bold';
+    font-size: 20px;
+}
+
+#garansi-button {
+    width: 250px;
+    height: 30px;
+    border-style: none;
+    border-radius: 100px;
+    background-image: linear-gradient(to bottom right, #6EFF5B, #70D800);
+    font-family: 'Montserrat-Bold';
+    color: white;
+    font-size: 20px;
+}
+
+.testimoni-fieldset {
+    border-style: none;
+    border-bottom-style: solid;
+    border-bottom-color: white;
+}
+
+@media (max-width: 600px) {
+    #more-button {
+        display: block;
+    }
+    
+    #back-old-days-button {
+        display: none;
+    }
+    
+    .over-top-button {
+        display: none;
+    }
+    
+    .under-bar-container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .layanan-container {
+        flex-direction: column;
+    }
+    
+    .testimoni-container {
+        flex-direction: column;
+    }
+}
+
+@media (min-width: 900px) {
+    .top-bar {
+        gap: 3.7rem;
+    }
+}
+
+@media (min-width: 600px) {
+    .more-bar {
+        display: none;
+    }
+}

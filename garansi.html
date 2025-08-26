@@ -1,0 +1,41 @@
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MJNSite | Garansi</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+    <div class="top-bar">
+        <button id="home-button" onclick='window.location.href = "index.html"'>MJNSite</button>
+        <button class="top-button" onclick='window.location.href = "hubungi.html"'>Hubungi</button>
+        <button class="top-button" onclick='window.location.href = "layanan.html"'>Layanan</button>
+        <button class="top-button" id="more-button" onclick="openMoreBar()">More</button>
+        <button class="over-top-button" onclick='window.location.href = "tentang-kami.html"'>Tentang Kami</button>
+        <button class="over-top-button">Garansi</button>
+        <button class="over-top-button">Testimoni</button>
+        <button id="back-old-days-button" onclick='window.location.href = "mozesite.html"'>MozeSite</button>
+    </div>
+    <div class="more-bar" id="more-bar">
+        <button class="button-more-bar" onclick='window.location.href = "tentang-kami.html"'>Tentang Kami</button>
+        <button class="button-more-bar">Garansi</button>
+        <button class="button-more-bar" onclick='window.location.href = "testimoni.html"'>Testimoni</button>
+        <button class="button-more-bar" onclick='window.location.href = "mozesite.html"'>MozeSite | Back To Old Days</button>
+    </div>
+    <p style="margin:50px"></p>
+    <h1 style="margin:0px;text-align:center;">Garansi</h1>
+    <p style="margin:0px;text-align:center">Isi formulir dibawah dan klaim garansi via WA</p>
+    <p></p>
+    <input type="text" placeholder="Nama Anda" style="margin-left:8px;" id="atas-nama">
+    <textarea style="margin:8px" placeholder="Keluhan/Masalah Anda" id="keluhan-saya"></textarea>
+    <select id="garansi-layanan" style="margin-left:8px;">
+        <option value="">-- PILIH LAYANAN --</option>
+        <option value="mozesite">MJNSite | Mozes Site</option>
+        <option value="juliusite">MJNSite | Julius Site</option>
+        <option value="nashasite">MJNSite | Nasha Site</option>
+    </select>
+    <p></p>
+    <div class="garansi-button-container">
+        <button id="garansi-button" onclick="klaimGaransi()">KLAIM GARANSI</button>
+    </div>
+</body>
